@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: #333;
+}
+
+canvas {
+    width: min(100svw, 100svh);
+    height: min(100svw, 100svh);
+    box-shadow: 0 0 30px #000;
+}

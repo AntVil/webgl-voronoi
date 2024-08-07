@@ -10,8 +10,8 @@ window.onload = async () => {
     canvas.height = RESOLUTION;
     const context = canvas.getContext("webgl2");
 
-    const vertexShader = await (await fetch("./webgl-voronoi/scripts/shader.vert")).text();
-    const fragmentShader = await (await fetch("./webgl-voronoi/scripts/shader.frag")).text();
+    const vertexShader = await (await fetch("./scripts/shader.vert")).text();
+    const fragmentShader = await (await fetch("./scripts/shader.frag")).text();
 
     const program = createProgram(context, vertexShader, fragmentShader);
 
